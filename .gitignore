@@ -63,3 +63,4 @@ $RECYCLE.BIN/
 *.msp
 Builds/
 .vs/
+Logs

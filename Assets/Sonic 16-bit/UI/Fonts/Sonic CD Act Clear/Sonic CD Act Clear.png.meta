@@ -1,47 +1,108 @@
 fileFormatVersion: 2
 guid: a8667a3bf32dbbf4d870d840cbe857a7
-timeCreated: 1449016265
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Sonic CD Act Clear_65
-    21300002: Sonic CD Act Clear_66
-    21300004: Sonic CD Act Clear_67
-    21300006: Sonic CD Act Clear_68
-    21300008: Sonic CD Act Clear_69
-    21300010: Sonic CD Act Clear_70
-    21300012: Sonic CD Act Clear_71
-    21300014: Sonic CD Act Clear_72
-    21300016: Sonic CD Act Clear_73
-    21300018: Sonic CD Act Clear_74
-    21300020: Sonic CD Act Clear_75
-    21300022: Sonic CD Act Clear_76
-    21300024: Sonic CD Act Clear_77
-    21300026: Sonic CD Act Clear_78
-    21300028: Sonic CD Act Clear_80
-    21300030: Sonic CD Act Clear_81
-    21300032: Sonic CD Act Clear_82
-    21300034: Sonic CD Act Clear_83
-    21300036: Sonic CD Act Clear_84
-    21300038: Sonic CD Act Clear_85
-    21300040: Sonic CD Act Clear_86
-    21300042: Sonic CD Act Clear_87
-    21300044: Sonic CD Act Clear_88
-    21300046: Sonic CD Act Clear_89
-    21300048: Sonic CD Act Clear_90
-    21300050: Sonic CD Act Clear_111
-    21300052: Sonic CD Act Clear_110
-    21300054: Sonic CD Act Clear_101
-    21300056: Sonic CD Act Clear_79
-    21300058: Sonic CD Act Clear_32
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Sonic CD Act Clear_65
+  - first:
+      213: 21300002
+    second: Sonic CD Act Clear_66
+  - first:
+      213: 21300004
+    second: Sonic CD Act Clear_67
+  - first:
+      213: 21300006
+    second: Sonic CD Act Clear_68
+  - first:
+      213: 21300008
+    second: Sonic CD Act Clear_69
+  - first:
+      213: 21300010
+    second: Sonic CD Act Clear_70
+  - first:
+      213: 21300012
+    second: Sonic CD Act Clear_71
+  - first:
+      213: 21300014
+    second: Sonic CD Act Clear_72
+  - first:
+      213: 21300016
+    second: Sonic CD Act Clear_73
+  - first:
+      213: 21300018
+    second: Sonic CD Act Clear_74
+  - first:
+      213: 21300020
+    second: Sonic CD Act Clear_75
+  - first:
+      213: 21300022
+    second: Sonic CD Act Clear_76
+  - first:
+      213: 21300024
+    second: Sonic CD Act Clear_77
+  - first:
+      213: 21300026
+    second: Sonic CD Act Clear_78
+  - first:
+      213: 21300028
+    second: Sonic CD Act Clear_80
+  - first:
+      213: 21300030
+    second: Sonic CD Act Clear_81
+  - first:
+      213: 21300032
+    second: Sonic CD Act Clear_82
+  - first:
+      213: 21300034
+    second: Sonic CD Act Clear_83
+  - first:
+      213: 21300036
+    second: Sonic CD Act Clear_84
+  - first:
+      213: 21300038
+    second: Sonic CD Act Clear_85
+  - first:
+      213: 21300040
+    second: Sonic CD Act Clear_86
+  - first:
+      213: 21300042
+    second: Sonic CD Act Clear_87
+  - first:
+      213: 21300044
+    second: Sonic CD Act Clear_88
+  - first:
+      213: 21300046
+    second: Sonic CD Act Clear_89
+  - first:
+      213: 21300048
+    second: Sonic CD Act Clear_90
+  - first:
+      213: 21300050
+    second: Sonic CD Act Clear_111
+  - first:
+      213: 21300052
+    second: Sonic CD Act Clear_110
+  - first:
+      213: 21300054
+    second: Sonic CD Act Clear_101
+  - first:
+      213: 21300056
+    second: Sonic CD Act Clear_79
+  - first:
+      213: 21300058
+    second: Sonic CD Act Clear_32
+  externalObjects: {}
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -50,37 +111,61 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Sonic CD Act Clear_65
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_65
       rect:
         serializedVersion: 2
         x: 0
@@ -91,7 +176,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_66
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_66
       rect:
         serializedVersion: 2
         x: 17
@@ -102,7 +197,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_67
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_67
       rect:
         serializedVersion: 2
         x: 34
@@ -113,7 +218,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_68
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_68
       rect:
         serializedVersion: 2
         x: 51
@@ -124,7 +239,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_69
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_69
       rect:
         serializedVersion: 2
         x: 68
@@ -135,7 +260,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_70
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_70
       rect:
         serializedVersion: 2
         x: 85
@@ -146,7 +281,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_71
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_71
       rect:
         serializedVersion: 2
         x: 102
@@ -157,7 +302,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_72
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_72
       rect:
         serializedVersion: 2
         x: 0
@@ -168,7 +323,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_73
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_73
       rect:
         serializedVersion: 2
         x: 17
@@ -179,7 +344,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_74
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_74
       rect:
         serializedVersion: 2
         x: 26
@@ -190,7 +365,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_75
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_75
       rect:
         serializedVersion: 2
         x: 43
@@ -201,7 +386,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_76
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_76
       rect:
         serializedVersion: 2
         x: 60
@@ -212,7 +407,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_77
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_77
       rect:
         serializedVersion: 2
         x: 77
@@ -223,7 +428,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_78
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_78
       rect:
         serializedVersion: 2
         x: 95
@@ -234,7 +449,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_80
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_80
       rect:
         serializedVersion: 2
         x: 0
@@ -245,7 +470,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_81
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_81
       rect:
         serializedVersion: 2
         x: 17
@@ -256,7 +491,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_82
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_82
       rect:
         serializedVersion: 2
         x: 34
@@ -267,7 +512,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_83
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_83
       rect:
         serializedVersion: 2
         x: 51
@@ -278,7 +533,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_84
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_84
       rect:
         serializedVersion: 2
         x: 68
@@ -289,7 +554,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_85
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_85
       rect:
         serializedVersion: 2
         x: 85
@@ -300,7 +575,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_86
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_86
       rect:
         serializedVersion: 2
         x: 102
@@ -311,7 +596,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_87
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_87
       rect:
         serializedVersion: 2
         x: 0
@@ -322,7 +617,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_88
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_88
       rect:
         serializedVersion: 2
         x: 17
@@ -333,7 +638,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_89
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_89
       rect:
         serializedVersion: 2
         x: 34
@@ -344,7 +659,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_90
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_90
       rect:
         serializedVersion: 2
         x: 51
@@ -355,7 +680,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_111
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_111
       rect:
         serializedVersion: 2
         x: 68
@@ -366,7 +701,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_110
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_110
       rect:
         serializedVersion: 2
         x: 81
@@ -377,7 +722,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_101
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_101
       rect:
         serializedVersion: 2
         x: 93
@@ -388,7 +743,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_79
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_79
       rect:
         serializedVersion: 2
         x: 112
@@ -399,7 +764,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sonic CD Act Clear_32
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sonic CD Act Clear_32
       rect:
         serializedVersion: 2
         x: 119
@@ -410,8 +785,28 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: Fonts
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

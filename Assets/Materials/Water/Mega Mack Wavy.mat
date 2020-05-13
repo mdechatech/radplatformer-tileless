@@ -8,31 +8,22 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Mega Mack Wavy
   m_Shader: {fileID: 4800000, guid: 9977e690ca6a5e14985235cdcadcc590, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-      data:
-        first:
-          name: _Curve
-        second:
-          m_Texture: {fileID: 2800000, guid: 82b32264a6a8c8343b180f2b08451e99, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+    - _Curve:
+        m_Texture: {fileID: 2800000, guid: 82b32264a6a8c8343b180f2b08451e99, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _Wavelength
-        second: 0.3
-      data:
-        first:
-          name: _Amplitude
-        second: 0.003
-      data:
-        first:
-          name: _ScrollRate
-        second: 0.08
-    m_Colors: {}
+    - _Amplitude: 0.003
+    - _ScrollRate: 0.08
+    - _Wavelength: 0.3
+    m_Colors: []
