@@ -1,0 +1,42 @@
+language: objective-c
+osx_image: xcode9.3
+rvm:
+- 2.5.1
+
+before_install:
+- chmod a+x ./Scripts/install.sh
+- chmod a+x ./Scripts/build.sh
+
+install:
+- "./Scripts/install.sh"
+script:
+- travis_wait 30 "./Scripts/build.sh"
+
+jdk: oraclejdk8
+
+env:
+ global:
+    #- JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
+    - ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+    - ANDROID_NDK_ROOT=/usr/local/share/android-ndk
+    - ANDROID_HOME=/usr/local/share/android-sdk
+
+deploy:
+- provider: pages
+  local-dir: Build/webgl/unity-aa/
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  skip_cleanup: true
+  on:
+    tags: true
+
+- provider: releases
+  file_glob: true
+  file: 
+    - Build/**/*.zip
+    - Build/android/*.apk
+    - Build/ios/*.ipa
+  api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  on:
+    tags: true
