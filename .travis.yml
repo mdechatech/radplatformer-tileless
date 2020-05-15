@@ -27,8 +27,8 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: false
   skip_cleanup: true
-  on:
-    tags: true
+#  on:
+#    tags: true
 
 - provider: releases
   file_glob: true
