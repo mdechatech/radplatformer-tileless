@@ -1,6 +1,6 @@
 #! /bin/sh
 
-project="unity-aa"
+project="sonic-realms"
 
 echo "whoami: $(whoami)"
 ls -lha $(pwd)
