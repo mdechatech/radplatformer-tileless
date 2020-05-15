@@ -5,7 +5,7 @@ Master is updated for releases only, the [develop](https://github.com/mdechatech
 
 --
 
-[![Build Status](https://travis-ci.org/humbertodiasSonic-Realms.svg?branch=master)](
+[![Build Status](https://travis-ci.org/humbertodias/Sonic-Realms.svg?branch=master)](
 https://travis-ci.org/humbertodias/Sonic-Realms)
 
 [Play](http://humbertodias.github.io/Sonic-Realms)
