@@ -57,8 +57,9 @@ install "MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-$VE
 rm *.pkg
 
 installAndroid(){
-
-  brew cask install homebrew/cask-versions/java8
+  # Oracle JDK - now is paid
+  #brew cask install homebrew/cask-versions/java8
+  brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
   # Aditionals
   installFromBrew gradle
