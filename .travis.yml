@@ -12,7 +12,8 @@ install:
 script:
 - travis_wait 30 "./Scripts/build.sh"
 
-jdk: oraclejdk8
+# jdk: oraclejdk8
+jdk: openjdk8
 
 env:
  global:
