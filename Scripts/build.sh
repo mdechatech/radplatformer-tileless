@@ -121,10 +121,10 @@ buildiOS(){
 
 export EVENT_NOKQUEUE=1
 
-#buildiOS
-buildAndroid
-#buildForDesktop
-#buildWegGL
+[ -z "$SKIP_IOS" ] && buildiOS || echo "Skipping build for iOS"
+[ -z "$SKIP_ANDROID" ] && buildAndroid || echo "Skipping build for Android"
+[ -z "$SKIP_DESKTOP" ] && buildForDesktop || echo "Skipping build for Desktop"
+[ -z "$SKIP_WEBGL" ] && buildWegGL || echo "Skipping build for WebGL"
 
 echo 'Logs from build'
 cat $(pwd)/unity.log

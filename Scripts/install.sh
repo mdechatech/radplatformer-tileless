@@ -59,7 +59,7 @@ rm *.pkg
 installAndroid(){
   # Oracle JDK - now is paid
   #brew cask install homebrew/cask-versions/java8
-  brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+  #brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
   # Aditionals
   installFromBrew gradle
@@ -117,7 +117,7 @@ installForDesktop(){
 
 export EVENT_NOKQUEUE=1
 
-installAndroid
-installiOS
-installForDesktop
-installWebGL
+[ -z "$SKIP_IOS" ] && installiOS || echo "Skipping install for iOS"
+[ -z "$SKIP_ANDROID" ] && installAndroid || echo "Skipping for for Android"
+[ -z "$SKIP_DESKTOP" ] && installForDesktop || echo "Skipping Install for Desktop"
+[ -z "$SKIP_WEBGL" ] && installWebGL || echo "Skipping Install for WebGL"
