@@ -28,15 +28,16 @@ env:
     - SKIP_LINUX=true
     - SKIP_OSX=true
     - SKIP_WINDOWS=true
+    - SKIP_WEBGL=true
 
-deploy:
-- provider: pages
-  local-dir: Build/webgl/$PROJECT_NAME/
-  github-token: $GITHUB_TOKEN
-  keep-history: false
-  skip_cleanup: true
-  on:
-    tags: true
+#deploy:
+#- provider: pages
+#  local-dir: Build/webgl/$PROJECT_NAME/
+#  github-token: $GITHUB_TOKEN
+#  keep-history: false
+#  skip_cleanup: true
+#  on:
+#    tags: true
 
 - provider: releases
   file_glob: true
