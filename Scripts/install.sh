@@ -125,7 +125,7 @@ installLinux(){
 }
 
 installOSX(){
-  # Not Required for MacOSX
+  echo Not Required for MacOSX
   #install "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$VERSION.pkg"
 }
 
