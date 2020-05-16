@@ -38,23 +38,27 @@ installFromBrew() {
   brew install $package
 }
 
-# See $BASE_URL/$HASH/unity-$VERSION-$PLATFORM.ini for complete list
-# of available packages, where PLATFORM is `osx` or `win`
+installUnityEditor(){
 
-# http://netstorage.unity3d.com/unity/21ae32b5a9cb/unity-2017.4.3f1-osx.ini 
-# http://netstorage.unity3d.com/unity/d4d99f31acba/unity-2018.1.0f2-osx.ini 
-# http://netstorage.unity3d.com/unity/b8cbb5de9840/unity-2018.1.1f1-osx.ini 
-# http://netstorage.unity3d.com/unity/292b93d75a2c/unity-2019.1.0f2-osx.ini
+  # See $BASE_URL/$HASH/unity-$VERSION-$PLATFORM.ini for complete list
+  # of available packages, where PLATFORM is `osx` or `win`
+
+  # http://netstorage.unity3d.com/unity/21ae32b5a9cb/unity-2017.4.3f1-osx.ini 
+  # http://netstorage.unity3d.com/unity/d4d99f31acba/unity-2018.1.0f2-osx.ini 
+  # http://netstorage.unity3d.com/unity/b8cbb5de9840/unity-2018.1.1f1-osx.ini 
+  # http://netstorage.unity3d.com/unity/292b93d75a2c/unity-2019.1.0f2-osx.ini
 
 
-install "MacEditorInstaller/Unity-$VERSION.pkg"
+  install "MacEditorInstaller/Unity-$VERSION.pkg"
 
-# Scripting Backend
-install "MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-$VERSION.pkg"
+  # Scripting Backend
+  install "MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-$VERSION.pkg"
+  install "MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-$VERSION.pkg"
 
-# Cleanup
-rm *.pkg
+  # Cleanup
+  rm *.pkg
+
+}
 
 installAndroid(){
   # Oracle JDK - now is paid
@@ -108,16 +112,26 @@ installWebGL(){
   install "MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-$VERSION.pkg"
 }
 
-installForDesktop(){
+installWindows(){
   install "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
-  install "MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-$VERSION.pkg"
+}
+
+installLinux(){
+  install "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
+}
+
+installOSX(){
   # Not Required for MacOSX
   #install "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$VERSION.pkg"
 }
 
 export EVENT_NOKQUEUE=1
 
+installUnityEditor
+
 [ -z "$SKIP_IOS" ] && installiOS || echo "Skipping install for iOS"
-[ -z "$SKIP_ANDROID" ] && installAndroid || echo "Skipping for for Android"
-[ -z "$SKIP_DESKTOP" ] && installForDesktop || echo "Skipping Install for Desktop"
+[ -z "$SKIP_ANDROID" ] && installAndroid || echo "Skipping install for Android"
+[ -z "$SKIP_WINDOWS" ] && installWindows || echo "Skipping install for Windows"
+[ -z "$SKIP_LINUX" ] && installLinux || echo "Skipping install for Linux"
+[ -z "$SKIP_OSX" ] && installOSX || echo "Skipping install for OSX"
 [ -z "$SKIP_WEBGL" ] && installWebGL || echo "Skipping Install for WebGL"

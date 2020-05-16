@@ -21,10 +21,16 @@ env:
     - ANDROID_SDK_ROOT=/usr/local/share/android-sdk
     - ANDROID_NDK_ROOT=/usr/local/share/android-ndk
     - ANDROID_HOME=/usr/local/share/android-sdk
+    - PROJECT_NAME=sonic-realms
+    - SKIP_IOS=true
+    - SKIP_WINDOWS=true
+    - SKIP_LINUX=true
+    - SKIP_OSX=true
+    - SKIP_WINDOWS=true
 
 deploy:
 - provider: pages
-  local-dir: Build/webgl/sonic-realms/
+  local-dir: Build/webgl/$PROJECT_NAME/
   github-token: $GITHUB_TOKEN
   keep-history: false
   skip_cleanup: true

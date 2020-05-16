@@ -5,26 +5,7 @@ project="sonic-realms"
 echo "whoami: $(whoami)"
 ls -lha $(pwd)
 
-buildForDesktop(){
-  echo "Attempting to build $project for OS X"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-    -batchmode \
-    -nographics \
-    -silent-crashes \
-    -logFile $(pwd)/unity.log \
-    -projectPath $(pwd) \
-    -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
-    -quit
-
-  echo "Attempting to build $project for Linux"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-    -batchmode \
-    -nographics \
-    -silent-crashes \
-    -logFile $(pwd)/unity.log \
-    -projectPath $(pwd) \
-    -buildLinuxUniversalPlayer "$(pwd)/Build/linux/$project.exe" \
-    -quit
+buildWindows(){
 
   echo "Attempting to build $project for Windows"
   /Applications/Unity/Unity.app/Contents/MacOS/Unity \
@@ -36,11 +17,46 @@ buildForDesktop(){
     -buildWindowsPlayer "$(pwd)/Build/windows/$project.exe" \
     -quit
 
-  echo 'Attempting to zip builds'
+  echo 'Attempting to windows zip builds'
+  pushd $(pwd)/Build
+  zip -9 -r windows.zip windows/
+  popd
+
+}
+
+buildLinux(){
+
+  echo "Attempting to build $project for Linux"
+  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+    -batchmode \
+    -nographics \
+    -silent-crashes \
+    -logFile $(pwd)/unity.log \
+    -projectPath $(pwd) \
+    -buildLinuxUniversalPlayer "$(pwd)/Build/linux/$project.exe" \
+    -quit
+
+  echo 'Attempting to Linux zip builds'
   pushd $(pwd)/Build
   zip -9 -r linux.zip linux/
-  zip -9 -r mac.zip osx/
-  zip -9 -r windows.zip windows/
+  popd
+
+}
+
+buildOSX(){
+  echo "Attempting to build $project for OS X"
+  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+    -batchmode \
+    -nographics \
+    -silent-crashes \
+    -logFile $(pwd)/unity.log \
+    -projectPath $(pwd) \
+    -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+    -quit
+
+  echo 'Attempting to OSX zip builds'
+  pushd $(pwd)/Build
+  zip -9 -r osx.zip osx/
   popd
 }
 
@@ -123,7 +139,9 @@ export EVENT_NOKQUEUE=1
 
 [ -z "$SKIP_IOS" ] && buildiOS || echo "Skipping build for iOS"
 [ -z "$SKIP_ANDROID" ] && buildAndroid || echo "Skipping build for Android"
-[ -z "$SKIP_DESKTOP" ] && buildForDesktop || echo "Skipping build for Desktop"
+[ -z "$SKIP_WINDOWS" ] && buildWindows || echo "Skipping build for Windows"
+[ -z "$SKIP_LINUX" ] && buildLinux || echo "Skipping build for Linux"
+[ -z "$SKIP_OSX" ] && buildOSX || echo "Skipping build for OSX"
 [ -z "$SKIP_WEBGL" ] && buildWegGL || echo "Skipping build for WebGL"
 
 echo 'Logs from build'
