@@ -121,10 +121,10 @@ buildiOS(){
 
 export EVENT_NOKQUEUE=1
 
-buildiOS
+#buildiOS
 buildAndroid
-buildForDesktop
-buildWegGL
+#buildForDesktop
+#buildWegGL
 
 echo 'Logs from build'
 cat $(pwd)/unity.log
