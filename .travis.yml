@@ -1,35 +1,41 @@
+---
 os: osx
 language: objective-c
 osx_image: xcode11.4
 rvm:
-- 2.5.1
+ - 2.5.1
 
 before_install:
-- chmod a+x ./Scripts/install.sh
-- chmod a+x ./Scripts/build.sh
+ - chmod a+x ./Scripts/install.sh
+ - chmod a+x ./Scripts/build.sh
 
 install:
-- "./Scripts/install.sh"
+ - "./Scripts/install.sh"
 script:
-- travis_wait 180 "./Scripts/build.sh"
-
-#jdk: oraclejdk8
-#jdk: openjdk8
+ - travis_wait 180 "./Scripts/build.sh"
 
 env:
  global:
-    #- JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
-    - ANDROID_SDK_ROOT=/usr/local/share/android-sdk
-    - ANDROID_NDK_ROOT=/usr/local/share/android-ndk
-    - ANDROID_HOME=/usr/local/share/android-sdk
-    - PROJECT_NAME=sonic-realms
-    - SKIP_IOS=true
-    - SKIP_WINDOWS=true
-    - SKIP_LINUX=true
-    - SKIP_OSX=true
-    - SKIP_WINDOWS=true
-    - SKIP_WEBGL=true
-    
+  - ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+  - ANDROID_NDK_ROOT=/usr/local/share/android-ndk
+  - ANDROID_HOME=/usr/local/share/android-sdk
+  - PROJECT_NAME=sonic-realms
+  - SKIP_IOS=true
+  - SKIP_WINDOWS=true
+  - SKIP_LINUX=true
+  - SKIP_OSX=true
+  - SKIP_WINDOWS=true
+  - SKIP_WEBGL=true
+
+deploy:
+- provider: pages
+  local-dir: Build/webgl/$PROJECT_NAME/
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  skip_cleanup: true
+  on:
+    tags: true
+
 - provider: releases
   file_glob: true
   file: 
@@ -38,5 +44,6 @@ env:
     - Build/ios/*.ipa
   api_key: $GITHUB_TOKEN
   skip_cleanup: true
-#  on:
-#    tags: true
+  on:
+    tags: true
+
