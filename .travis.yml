@@ -24,7 +24,7 @@ env:
 
 deploy:
 - provider: pages
-  local-dir: Build/webgl/unity-aa/
+  local-dir: Build/webgl/sonic-realms/
   github-token: $GITHUB_TOKEN
   keep-history: false
   skip_cleanup: true
@@ -39,5 +39,5 @@ deploy:
     - Build/ios/*.ipa
   api_key: $GITHUB_TOKEN
   skip_cleanup: true
-  on:
-    tags: true
+#  on:
+#    tags: true
