@@ -11,7 +11,7 @@ before_install:
 install:
 - "./Scripts/install.sh"
 script:
-- travis_wait 90 "./Scripts/build.sh"
+- travis_wait 180 "./Scripts/build.sh"
 
 #jdk: oraclejdk8
 #jdk: openjdk8
