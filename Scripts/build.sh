@@ -106,7 +106,17 @@ buildAndroid(){
     +buildlocation "$(pwd)/Build/android/$project.apk" \
     -quit  
 
+  if [ $? = 0 ] ; then
+     echo "Building Android binaries completed successfully."
+     error_code=0
+   else
+     echo "Building Android binaries failed. Exited with $?."
+     error_code=1
+   fi
+
   rm $(pwd)/Build/android/*.zip
+
+
 
 }
 
