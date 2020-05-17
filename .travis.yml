@@ -16,6 +16,7 @@ script:
 
 env:
  global:
+  - JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
   - ANDROID_SDK_ROOT=/usr/local/share/android-sdk
   - ANDROID_NDK_ROOT=/usr/local/share/android-ndk
   - ANDROID_HOME=/usr/local/share/android-sdk

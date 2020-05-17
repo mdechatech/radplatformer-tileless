@@ -5,10 +5,14 @@ project="sonic-realms"
 echo "whoami: $(whoami)"
 ls -lha $(pwd)
 
+UNITY=/Applications/Unity/Unity.app/Contents/MacOS/Unity
+#UNITY=/home/humbertodias/Unity/Hub/Editor/2017.4.39f1/Editor/Unity
+echo "Unity path $UNITY"
+
 buildWindows(){
 
   echo "Attempting to build $project for Windows"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  $UNITY \
     -batchmode \
     -nographics \
     -silent-crashes \
@@ -27,7 +31,7 @@ buildWindows(){
 buildLinux(){
 
   echo "Attempting to build $project for Linux"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  $UNITY \
     -batchmode \
     -nographics \
     -silent-crashes \
@@ -45,7 +49,7 @@ buildLinux(){
 
 buildOSX(){
   echo "Attempting to build $project for OS X"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  $UNITY \
     -batchmode \
     -nographics \
     -silent-crashes \
@@ -62,7 +66,7 @@ buildOSX(){
 
 buildWegGL(){
   echo "Attempting to build $project for WebGL"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  $UNITY \
     -batchmode \
     -nographics \
     -silent-crashes \
@@ -87,7 +91,7 @@ buildWegGL(){
 
 buildAndroid(){
 
-  export JAVA_HOME=$(/usr/libexec/java_home -version 1.8)
+  # export JAVA_HOME=$(/usr/libexec/java_home -version 1.8)
   # avoiding error : java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
   # export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 
@@ -96,7 +100,7 @@ buildAndroid(){
   echo "JAVA_HOME: $JAVA_HOME"
 
   echo "Attempting to build $project for Android"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  $UNITY \
     -batchmode \
     -nographics \
     -silent-crashes \
@@ -120,7 +124,7 @@ buildAndroid(){
 
 buildiOS(){
   echo "Attempting to build $project for iOS"
-  /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  $UNITY \
     -batchmode \
     -nographics \
     -silent-crashes \
