@@ -5,10 +5,6 @@ project="sonic-realms"
 echo "whoami: $(whoami)"
 ls -lha $(pwd)
 
-UNITY=/Applications/Unity/Unity.app/Contents/MacOS/Unity
-#UNITY=/home/humbertodias/Unity/Hub/Editor/2017.4.39f1/Editor/Unity
-echo "Unity path $UNITY"
-
 buildWindows(){
 
   echo "Attempting to build $project for Windows"
@@ -149,6 +145,7 @@ buildiOS(){
 
 export EVENT_NOKQUEUE=1
 
+[ -z "$UNITY" ] && echo "UNITY path wasn't set" || echo "echo $UNITY path"
 [ -z "$SKIP_IOS" ] && buildiOS || echo "Skipping build for iOS"
 [ -z "$SKIP_ANDROID" ] && buildAndroid || echo "Skipping build for Android"
 [ -z "$SKIP_WINDOWS" ] && buildWindows || echo "Skipping build for Windows"

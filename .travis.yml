@@ -20,6 +20,8 @@ env:
   - ANDROID_SDK_ROOT=/usr/local/share/android-sdk
   - ANDROID_NDK_ROOT=/usr/local/share/android-ndk
   - ANDROID_HOME=/usr/local/share/android-sdk
+  - UNITY=/Applications/Unity/Unity.app/Contents/MacOS/Unity
+#  - UNITY=/home/humbertodias/Unity/Hub/Editor/2017.4.39f1/Editor/Unity
   - PROJECT_NAME=sonic-realms
   - SKIP_IOS=true
 
