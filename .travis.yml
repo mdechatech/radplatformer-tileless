@@ -21,7 +21,6 @@ env:
   - ANDROID_HOME=/usr/local/share/android-sdk
   - PROJECT_NAME=sonic-realms
   - SKIP_IOS=true
-  - SKIP_ANDROID=true
 
 deploy:
 - provider: pages
