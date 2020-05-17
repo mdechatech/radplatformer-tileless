@@ -114,9 +114,7 @@ buildAndroid(){
      error_code=1
    fi
 
-  rm $(pwd)/Build/android/*.zip
-
-
+  #rm $(pwd)/Build/android/*.zip
 
 }
 
@@ -153,6 +151,8 @@ export EVENT_NOKQUEUE=1
 [ -z "$SKIP_LINUX" ] && buildLinux || echo "Skipping build for Linux"
 [ -z "$SKIP_OSX" ] && buildOSX || echo "Skipping build for OSX"
 [ -z "$SKIP_WEBGL" ] && buildWegGL || echo "Skipping build for WebGL"
+
+tree $(pwd)/Build
 
 echo 'Logs from build'
 cat $(pwd)/unity.log

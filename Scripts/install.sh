@@ -48,6 +48,10 @@ installUnityEditor(){
   # of available packages, where PLATFORM is `osx` or `win`
 
   # http://netstorage.unity3d.com/unity/21ae32b5a9cb/unity-2017.4.3f1-osx.ini 
+
+  
+  http://netstorage.unity3d.com/unity/947131c5be7e/unity-2017.4.39-osx.ini
+
   # http://netstorage.unity3d.com/unity/d4d99f31acba/unity-2018.1.0f2-osx.ini 
   # http://netstorage.unity3d.com/unity/b8cbb5de9840/unity-2018.1.1f1-osx.ini 
   # http://netstorage.unity3d.com/unity/292b93d75a2c/unity-2019.1.0f2-osx.ini
@@ -131,6 +135,7 @@ installOSX(){
 
 export EVENT_NOKQUEUE=1
 
+installFromBrew tree
 installUnityEditor
 
 [ -z "$SKIP_IOS" ] && installiOS || echo "Skipping install for iOS"
